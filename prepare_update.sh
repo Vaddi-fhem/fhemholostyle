@@ -5,12 +5,12 @@
 rm controls_holo_style.txt
 find ./www -type f \( ! -iname ".*" \) -print0 | while IFS= read -r -d '' f;
 do
-    echo "DEL ${f}" >> controls_ha_theme.txt
+    echo "DEL ${f}" >> controls_holo_style.txt
     out="UPD "$(stat -f "%Sm" -t "%Y-%m-%d_%T" $f)" "$(stat -f%z $f)" ${f}"
     echo ${out//.\//} >> controls_holo_style.txt
 done
 
 # CHANGED file
-echo "FHEM haus-automatisierung.com custom theme last changes:" > CHANGED
+echo "FHEM holo-style custom theme last changes:" > CHANGED
 echo $(date +"%Y-%m-%d") >> CHANGED
 echo " - $(git log -1 --pretty=%B)" >> CHANGED
