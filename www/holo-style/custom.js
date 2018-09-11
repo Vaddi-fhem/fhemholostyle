@@ -1,9 +1,26 @@
 
+
 function getClock() {
+	
+
+	
     var d = new Date();
     nhour = d.getHours();
     nmin = d.getMinutes();
+	nmonth = d.getMonth();
+	nday = d.getDate();
     
+	var weekday = new Array(7);
+    weekday[0] = "So";
+    weekday[1] = "Mo";
+    weekday[2] = "Di";
+    weekday[3] = "Mi";
+    weekday[4] = "Do";
+    weekday[5] = "Fr";
+    weekday[6] = "Sa";
+
+    var n = weekday[d.getDay()];
+	
     if (nhour <= 9) {
         nhour = '0' + nhour;
     }
@@ -11,15 +28,29 @@ function getClock() {
     if (nmin <= 9) {
         nmin = '0' + nmin;
     }
+	
+	nday = nday > 9 ? nday : "0" + nday;
+	nmonth = nmonth > 9 ? nmonth : "0" + nmonth;
 
-    document.getElementById('clock').innerHTML = nhour + ':' + nmin + ' Uhr';
+	document.getElementById('clock').innerHTML = nhour + ':' + nmin + '<br>'+ n + ' ' + nday + '.' + nmonth;
+
 
     setTimeout(getClock, 1000);
 }
 
-jQuery(document).ready(function ($) {
+   
 
-    var themeVersion = '2.7';
+jQuery(document).ready(function ($) {
+	
+	
+//var d1 = document.getElementById('menuScrollArea');
+//d1.insertAdjacentHTML('beforebegin', '<script type="text/javascript">    window.onload=function()({ function(){      var parallax = document.querySelectorAll("body"),          speed = 0.5;      window.onscroll = function(){        [].slice.call(parallax).forEach(function(el,i){          var windowYOffset = window.pageYOffset,              elBackgrounPos = "50% " + (windowYOffset * speed) + "px";          el.style.backgroundPosition = elBackgrounPos;         });      };    })();    }</script>');
+
+    //$('head').append( '<script type="text/javascript">    window.onload=function(){ (function(){      var parallax = document.querySelectorAll("body"),          speed = 0.5;      window.onscroll = function(){        [].slice.call(parallax).forEach(function(el,i){          var windowYOffset = window.pageYOffset,              elBackgrounPos = "50% " + (windowYOffset * speed) + "px";          el.style.backgroundPosition = elBackgrounPos;         });      };    })();    }</script>' );
+
+
+	
+    var themeVersion = '1.0';
 
     // Check für JS-Installation entfernen
     $('#hdr').addClass('js-installed');
@@ -31,6 +62,10 @@ jQuery(document).ready(function ($) {
         $('<span id="clock"></span>')
     );
 
+	$('').append(
+        $('<span class="theme-version">' + themeVersion + '</span>')
+    );
+	
     // Add clock
     window.addEventListener('load', getClock, false);
 
@@ -65,7 +100,7 @@ jQuery(document).ready(function ($) {
     var $navElement = jQuery('#menu .room').last().find('tbody');
 
     $navElement.append(
-        $('<tr><td><div><a class="custom-menu-entry" href="https://github.com/klein0r/fhem-style-haus-automatisierung/issues/">Theme-Fehler melden (v' + themeVersion + ')</a></div></td></tr>')
+        $('<tr><td><div><a class="custom-menu-entry" href="https://github.com/Vaddi-fhem/fhemholostyle/issues">Theme-Fehler melden (v' + themeVersion + ')</a></div></td></tr>')
     );
 
     // Automatische Breite für HDR Input
@@ -150,3 +185,4 @@ jQuery(document).ready(function ($) {
 
     })(jQuery, window, document);
 });
+

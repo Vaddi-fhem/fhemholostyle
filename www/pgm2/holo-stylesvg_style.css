@@ -2,6 +2,19 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
+
+:root {
+	--color-accent: #00aadc;
+	--color-even: #30363c;
+	--color-odd: #191c1e;
+	--color-dark-transparent: #191c1ef0;
+	--color-light-transparent: #30363cf0;
+	--color-dark: #191c1e;
+	--color-light: #30363c;
+	--color-text: #d3d3d6;
+}
+
+
 html { line-height: 1; }
 
 ol, ul { list-style: none; }
@@ -23,7 +36,7 @@ svg circle#svgmarker { color: #278727; opacity: 0.5; }
 svg path.SVGplot { stroke: black; fill: none; }
 svg rect.SVGplot { stroke: black; fill: none; }
 svg polyline.SVGplot { fill: none; }
-svg .border { stroke: #00aadc; fill: #fff; }
+svg .border { stroke: #00aadc; fill: var(--color-dark); }
 svg .vgrid { stroke: gray; stroke-dasharray: 2, 6; }
 svg .hgrid { stroke: gray; stroke-dasharray: 2, 6; }
 svg .pasted { stroke: black; stroke-dasharray: 1, 1; }
