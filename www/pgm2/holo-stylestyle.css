@@ -181,7 +181,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 
 textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; border-left: 5px var(--color-accent) solid; font-size: 100%; }
 
-#console, .fhemlog { color: #fff; font-family: 'Source Code Pro', monospace; background: none; border: none; }
+#console, .fhemlog { color: #fff; font-family: 'Source Code Pro', monospace; background: none; border: none; text-shadow: 1px 1px black, -1px -1px black; }
 
 #dashboard { margin-top: -10px; }
 #dashboard .dashboard-button { background: #f5f5f5 no-repeat 7px !important; border: 1px solid #ddd; border-radius: 0 !important; cursor: pointer; display: inline-block; height: 1.9em; margin-top: 2px; padding: 0 .6em; position: absolute; width: 14px; }
