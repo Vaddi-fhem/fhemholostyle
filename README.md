@@ -33,4 +33,5 @@ Bitte [hier](https://github.com/Vaddi-fhem/fhemholostyle/issues) einen Issue ers
 ## DANKE:
 
 Danke an Matthias Kleine(https://github.com/klein0r)!
+
 Danke @ https://dribbble.com/shots/2084609-Smart-House-Icon-Set-Free
