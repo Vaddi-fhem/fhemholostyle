@@ -32,6 +32,6 @@ Bitte [hier](https://github.com/Vaddi-fhem/fhemholostyle/issues) einen Issue ers
 
 ## DANKE:
 
-Danke an Matthias Kleine(https://github.com/klein0r) [Hausautomatisierung.com](http://www.hausautomatisierung.com)
+Danke an Matthias Kleine(https://github.com/klein0r) [Haus-automatisierung.com](http://www.haus-automatisierung.com)
 
 Danke @ https://dribbble.com/shots/2084609-Smart-House-Icon-Set-Free
