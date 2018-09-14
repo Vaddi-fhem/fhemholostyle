@@ -1,4 +1,4 @@
-0UPD  2018-09-09_20:28:55 6586 www/holo-style/custom.js
+0UPD  2018-14-09_22:35:11 5533 www/holo-style/custom.js
 UPD  2018-09-09_19:13:59 416360 www/holo-style/images/bg_wrapper.jpg
 UPD  2018-07-09_21:57:01 2411 www/images/holo-style/doorhandle.svg
 UPD  2018-09-09_12:38:52 101942 www/images/holo-style/favicon.ico
@@ -12,5 +12,5 @@ UPD  2018-07-09_21:57:01 2342 www/images/holo-style/smartphone.svg
 UPD  2018-07-09_21:57:01 2287 www/images/holo-style/tv.svg
 UPD  2018-07-09_21:57:01 6636 www/images/holo-style/weather.svg
 UPD  2018-07-09_21:57:01 5056 www/pgm2/holo-stylefloorplanstyle.css
-UPD  2018-13-09_22:12:55 34370 www/pgm2/holo-stylestyle.css
+UPD  2018-14-09_23:45:39 31698 www/pgm2/holo-stylestyle.css
 UPD  2018-10-09_20:38:02 5260 www/pgm2/holo-stylesvg_style.css
