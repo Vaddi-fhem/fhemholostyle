@@ -28,7 +28,7 @@ Bitte [hier](https://github.com/Vaddi-fhem/fhemholostyle/issues) einen Issue ers
 
 ## Vorschau
 
-![FHEM Style](https://raw.githubusercontent.com/klein0r/fhem-style-haus-automatisierung/version-2/preview.png)
+![FHEM Style](https://raw.githubusercontent.com/Vaddi-fhem/fhemholostyle/master/preview.jpg)
 
 ## DANKE:
 
