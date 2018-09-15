@@ -104,7 +104,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .dval > table { margin-bottom: 10px; }
 #content .dval > table .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
 #content .dval input { border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); padding: 1px 10px; background: transparent; font-size: 16px; }
-#content .makeSelect { border-left: 5px var(--color-accent) solid; border-right: 5px var(--color-accent) solid; box-sizing: border-box; clear: left; color: var(--color-text); display: inline; float: left; padding: 5px; width: 100%; }
+#content .makeSelect { border-left: 5px var(--color-accent) solid; border-right: 5px var(--color-accent) solid; box-sizing: border-box; clear: left; color: var(--color-text); display: inline; float: left; padding: 5px; width: 100%; min-width: 100vw;}
 
 #content .makeSelect:nth-of-type(even) { background: var(--color-even); }
 #content .makeSelect:nth-of-type(odd) { background: var(--color-odd); }
@@ -115,7 +115,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .makeSelect:nth-of-type(even) select {background-color: var(--color-even);}
 #content .makeSelect:nth-of-type(odd) select {background-color: var(--color-odd);}
 
-#content .makeSelect input[type="submit"] { border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); padding: 1px 10px; background: transparent; font-size: 16px; width: 5%;}
+#content .makeSelect input[type="submit"] { border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); padding: 1px 10px; background: transparent; font-size: 16px; width: 5%; min-width: 50px;}
 #content .makeSelect input[type="text"] { border: 1px var(--color-accent) solid; color: var(--color-accent); background: #101010; font-size: 16px; height: 20px; }
 #content .makeSelect + .makeTable { margin-top: 10px; }
 #content .makeSelect .slider { width: 250px; height: 22px; }
