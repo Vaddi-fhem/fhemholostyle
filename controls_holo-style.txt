@@ -1,5 +1,5 @@
 UPD  2018-14-09_22:35:11 5533 www/holo-style/custom.js
-UPD  2018-09-09_19:13:59 416360 www/holo-style/images/bg_wrapper.jpg
+UPD  2018-13-09_21:20:19 984899 www/holo-style/images/bg_wrapper.jpg
 UPD  2018-07-09_21:57:01 2411 www/images/holo-style/doorhandle.svg
 UPD  2018-09-09_12:38:52 101942 www/images/holo-style/favicon.ico
 UPD  2018-07-09_21:57:01 4924 www/images/holo-style/heater.svg
