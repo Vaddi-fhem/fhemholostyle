@@ -30,13 +30,6 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
-/*body { background: radial-gradient(black 15%, transparent 16%) 0 0,
-radial-gradient(black 15%, transparent 16%) 8px 8px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;background-color:#282828;
-background-size:16px 16px; color: #fff; font-family: 'Open Sans', sans-serif !important; font-size: 13px !important; margin: 0 auto; padding: 0; tab-size: 4; background-attachment: fixed;}
-*/
-
 body { background: url(../holo-style/images/bg_wrapper.jpg) no-repeat center 0 fixed; background-size: cover; background-position: top center; color: #fff; font-family: 'Open Sans', sans-serif !important; font-size: 13px !important; margin: 0 auto; padding: 0; tab-size: 4;}
 
 body.dashboard_fullsize #content { border: none !important; float: none !important; height: 100% !important; overflow: visible !important; padding: 0 !important; position: inherit !important; width: 100% !important; }
@@ -182,7 +175,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #console { bottom: 0; overflow: auto; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
 
 textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; border-left: 5px var(--color-accent) solid; font-size: 100%; }
-/*test*/
+
 #console, .fhemlog { color: #fff; font-family: 'Source Code Pro', monospace; background: none; border: none; text-shadow: 1px 1px black, -1px -1px black; }
 
 #dashboard { margin-top: -10px; }
