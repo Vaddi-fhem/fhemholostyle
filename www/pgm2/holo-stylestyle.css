@@ -104,7 +104,12 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .dval > table { margin-bottom: 10px; }
 #content .dval > table .downText { line-height: 24px; font-family: 'Source Code Pro', monospace !important; }
 #content .dval input { border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); padding: 1px 10px; background: transparent; font-size: 16px; }
-#content .makeSelect { border-left: 5px var(--color-accent) solid; border-right: 5px var(--color-accent) solid; box-sizing: border-box; clear: left; color: var(--color-text); display: inline; float: left; padding: 5px; width: 100%; min-width: 100vw;}
+#content .makeSelect { border-left: 5px var(--color-accent) solid; border-right: 5px var(--color-accent) solid; box-sizing: border-box; clear: left; color: var(--color-text); display: inline; float: left; padding: 5px; width: 100%;}
+
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    #content .makeSelect { min-width: 100vw;}
+}
 
 #content .makeSelect:nth-of-type(even) { background: var(--color-even); }
 #content .makeSelect:nth-of-type(odd) { background: var(--color-odd); }
