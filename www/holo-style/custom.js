@@ -43,12 +43,6 @@ function getClock() {
 jQuery(document).ready(function ($) {
 	
 	
-//var d1 = document.getElementById('menuScrollArea');
-//d1.insertAdjacentHTML('beforebegin', '<script type="text/javascript">    window.onload=function()({ function(){      var parallax = document.querySelectorAll("body"),          speed = 0.5;      window.onscroll = function(){        [].slice.call(parallax).forEach(function(el,i){          var windowYOffset = window.pageYOffset,              elBackgrounPos = "50% " + (windowYOffset * speed) + "px";          el.style.backgroundPosition = elBackgrounPos;         });      };    })();    }</script>');
-
-    //$('head').append( '<script type="text/javascript">    window.onload=function(){ (function(){      var parallax = document.querySelectorAll("body"),          speed = 0.5;      window.onscroll = function(){        [].slice.call(parallax).forEach(function(el,i){          var windowYOffset = window.pageYOffset,              elBackgrounPos = "50% " + (windowYOffset * speed) + "px";          el.style.backgroundPosition = elBackgrounPos;         });      };    })();    }</script>' );
-
-
 	
     var themeVersion = '1.0';
 
