@@ -15,6 +15,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 
+
 html { line-height: 1; }
 
 ol, ul { list-style: none; }
@@ -31,14 +32,14 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 body { background: url(../holo-style/images/bg_wrapper.jpg) no-repeat center 0 fixed; background-color: #000; background-size: cover; background-position: top center; color: #fff; font-family: 'Open Sans', sans-serif !important; font-size: 13px !important; margin: 0 auto; padding: 0; tab-size: 4;}
-
+body[style="word-wrap: break-word;"]>#menuScrollArea>#menu {position: fixed;}
 body.dashboard_fullsize #content { border: none !important; float: none !important; height: 100% !important; overflow: visible !important; padding: 0 !important; position: inherit !important; width: 100% !important; }
 
 body.dashboard_fullsize #menuScrollArea, body.dashboard_fullsize #hdr, div.ui-dialog div.ui-dialog-titlebar { display: none; }
 
 a { color: var(--color-accent); text-decoration: none; }
 
-button.dist { border: 0; cursor: pointer; margin: 10px; }
+button.dist { border: 0; cursor: pointer; margin: 10px; background: var(--color-dark); border: dashed 1px var(--color-accent) }
 
 #logo { background: transparent; height: 120px; margin-left: 20px; margin-top: 10px; position: fixed; width: 260px; }
 #logo .theme-version { opacity: 0.7; }
@@ -99,7 +100,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .makeTable .slider { height: 16px; }
 #content .makeTable .slider .handle { height: 16px; line-height: 16px; }
 #content .slider { width: 350px; border: 1px var(--color-accent) solid; }
-#content .slider .handle { -moz-user-select: none; -user-select: none; -webkit-user-select: none; background: var(--color-accent); color: #f5f6f9; cursor: pointer; position: relative; text-align: center; width: 40px; }
+#content .slider .handle { -moz-user-select: none; -user-select: none; -webkit-user-select: none; background: var(--color-accent); color: var(--color-dark); cursor: pointer; position: relative; text-align: center; width: 40px; }
 #content .colorpicker_ct .slider { background: url(../jscolor/ct_background.svg); background-size: 150px; }
 #content .colorpicker_ct_mired .slider { background: url(../jscolor/ct_mired_background.svg); background-size: 150px; }
 #content .colorpicker_hue .slider { background: url(../jscolor/hue_background.svg); background-size: 150px; }
@@ -159,6 +160,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content .detLink { background: var(--color-dark); border: 1px var(--color-accent) solid; padding: 2px 10px; display: inline-block; margin-top: 10px; line-height: 20px; margin-right: 10px; margin-bottom: 20px; vertical-align: top; }
 #content .detLink a { color: var(--color-accent); }
 #content #devSpecHelp { background: var(--color-light); border-left: 5px var(--color-accent) solid; color: var(--color-text); font-family: 'Source Code Pro', monospace !important; max-width: 985px; padding: 5px; width: 100%; margin-top: 10px; }
+#content #devSpecHelp.makeTable {letter-spacing: inherit;}
 #content #devSpecHelp h3 { font-size: 16px; letter-spacing: 10px; text-transform: uppercase; font-weight: bold; }
 #content #devSpecHelp dd { margin-left: 50px; }
 #content #devSpecHelp dt { margin-left: 25px; }
@@ -172,7 +174,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #ZWHelp.makeTable.help:empty { display: none; }
 #content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
 #content .CodeMirror { width: 100% !important; height: 100nh;}
-#content #edit input[type="submit"].psc { border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); font-size: 16px; margin: 10px; background: transparent; min-width: 200px; }
+#content #edit input[type="submit"].psc { border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); font-size: 16px; margin: 10px; background: var(--color-dark); min-width: 200px; }
 
 #console { bottom: 0; overflow: auto; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
 
@@ -260,13 +262,13 @@ textarea#console { white-space: normal; margin-top: 10px; margin-bottom: 10px; b
   
 #menu table.room .custom-menu-entry { color: var(--color-accent); }
 
-#menu table.room img.icon, #menu table.room svg.icon { width: 20px; height: 20px; margin: 0; position: absolute; right: 10px; top: 7px; }
+#menu table.room img.icon, #menu table.room svg.icon { width: 20px; height: 20px; margin: 0; position: absolute; right: 10px; top: 7px; fill: var(--color-accent);}
 #menu table.room #saveCheck { margin-top: -35px; background: transparent; color: red; border-right: 5px var(--color-accent) solid; border-left: 5px var(--color-accent) solid; text-indent: -9999px; margin-left: 220px; }
 #menu table.room tr a { border-bottom: solid 1px var(--color-light-transparent); }
 #menu table.room tr:last-child a { border-bottom: none; }
 #menu table.room tr.sel a { background: var(--color-accent); color: var(--color-dark); border-top: 1px solid var(--color-dark); border-bottom: 1px solid var(--color-light); box-shadow: inset 0 4px 2px -2px #000000, inset 0 -4px 2px -2px #000000;}
 #menu table.room tr:first-child.sel a {box-shadow: inset 0 -4px 2px -2px #000000;}
-#menu table.room tr.sel svg.icon { fill: #fff; }
+#menu table.room tr.sel svg.icon { fill: var(--color-dark); }
 #menu table.room tr.sel td a:after { border-bottom: 17px solid transparent; border-left: 13px solid var(--color-accent); border-top: 17px solid transparent; content: " "; height: 0; margin-top: -17px; position: absolute; right: -13px; top: 50%; width: 0; }
 
 #menuScrollArea { height: 100%; top: 0; left: 0; overflow: auto; position: relative; width: 300px; }
@@ -293,7 +295,7 @@ svg:not([fill]):not(.jssvg) { fill: var(--color-text); }
 
 #right { max-width: 1000px; width: 100%; }
 #right > h3, #right > h4 { font-size: 20px; text-transform: uppercase; letter-spacing: 10px; margin-top: 10px; }
-#right > ul, #right > div, #right > div > ul, #right > p { color: #676f7a; background: #fff; border-collapse: collapse; border-left: 5px var(--color-accent) solid; font-family: 'Source Code Pro', monospace !important; max-width: 995px; padding: 5px; width: 100%; }
+#right > ul, #right > div, #right > div > ul, #right > p { color: var(--color-text); background: var(--color-light); border-collapse: collapse; border-left: 5px var(--color-accent) solid; font-family: 'Source Code Pro', monospace !important; max-width: 995px; padding: 5px; width: 100%; }
 #right > ul h3, #right > div h3, #right > div > ul h3, #right > p h3 { font-size: 16px; letter-spacing: 10px; text-transform: uppercase; font-weight: bold; }
 #right > ul dd, #right > div dd, #right > div > ul dd, #right > p dd { margin-left: 50px; }
 #right > ul dt, #right > div dt, #right > div > ul dt, #right > p dt { margin-left: 25px; }
