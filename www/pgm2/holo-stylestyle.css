@@ -7,6 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	--color-accent: #00aadc;
 	--color-even: #30363c;
 	--color-odd: #191c1e;
+	--color-accent-transparent: #00aadc70;
 	--color-dark-transparent: #191c1ef0;
 	--color-light-transparent: #30363cf0;
 	--color-dark: #191c1e;
@@ -14,6 +15,61 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	--color-text: #d3d3d6;
 }
 
+
+/*Custom Checkbox*/
+
+input[type=checkbox] { 
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  font-weight: bold;
+
+}
+
+input[type=checkbox]:after {
+  content: '\2713\0020';
+  display: block;
+  background: transparent;
+  pointer-events: none;
+  font-size: 15px;
+  height: 15px;
+  width: 15px;
+  transition: .25s all ease-in-out;
+  border-radius: 3px;
+  line-height: 13px;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: var(--color-accent);
+  color:transparent;
+  padding-left:2px;
+}
+
+input[type=checkbox]:checked:after {
+  content: '\2713\0020';
+  background-color: transparent;
+  color: var(--color-accent);
+  
+  border-style: solid;
+  
+}
+
+input[type=checkbox]:hover:after {
+border-style: dashed;
+  background-color: var(--color-accent-transparent);
+}
+
+input[type=checkbox]:checked:hover:after {
+border-style: solid;
+  background-color: var(--color-accent-transparent);
+  color: var(--color-dark);
+}
+
+#multidlg .checkbox {
+  margin-right: 10px
+}
 
 
 html { line-height: 1; }
@@ -66,6 +122,7 @@ button.dist { border: 0; cursor: pointer; margin: 10px; background: var(--color-
 #content, #hdr, #right { left: 320px; }
 
 input[type="text"] { border: 1px var(--color-accent) solid; color: var(--color-accent); background: #101010; font-size: 16px; height: 20px; vertical-align: baseline;}
+input[type="text"]:focus {box-shadow: 0 0 10px var(--color-accent); transition: .5s all ease-in-out;}
 input.saveName[type="text"] { border: 1px var(--color-accent) solid; background: var(--color-dark); color:var(--color-accent); }
 input[type="submit"] { border: inset 1px var(--color-dark); background: #00aadc; color:var(--color-dark); }
 
@@ -87,6 +144,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 
 #content .get, #content .set, #content .attr { float: left; }
 #content pre { font-family: 'Source Code Pro', monospace !important; }
+#content #disp pre {white-space: pre-wrap;}
 #content .roomoverview .icon { margin-right: 5px; }
 #content .roomoverview .first-table-column { width: 25%; border-right: 2px var(--color-accent) solid; }
 #content .modCmdinput[type="submit"] { border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); padding: 1px 10px; background: transparent; font-size: 16px; }
@@ -120,12 +178,14 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 
 #content .makeSelect input[type="submit"] { border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); padding: 1px 10px; background: transparent; font-size: 16px; width: 5%; min-width: 50px;}
 #content .makeSelect input[type="text"] { border: 1px var(--color-accent) solid; color: var(--color-accent); background: #101010; font-size: 16px; height: 20px; }
+#content .makeSelect input[type="text"]:focus {box-shadow: 0 0 10px var(--color-accent); transition: .5s all ease-in-out;}
 #content .makeSelect + .makeTable { margin-top: 10px; }
 #content .makeSelect .slider { width: 250px; height: 22px; }
 #content .makeSelect .slider .handle { height: 22px; line-height: 22px; }
 #content table { border-collapse: collapse; width: 100%; }
 #content table.wide { width: 100%; }
 #content table select { background-image: linear-gradient(45deg, transparent 50%, var(--color-accent) 50%), linear-gradient(135deg, var(--color-accent) 50%, transparent 50%), linear-gradient(to right, var(--color-accent), var(--color-accent)); background-position: calc(100% - 15px) calc(0.5em + 1px), calc(100% - 10px) calc(0.5em + 1px), calc(100% - 2em) 0.4em; background-size: 5px 5px, 5px 5px, 1px 0.9em; background-repeat: no-repeat; border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); font-size: 100%; line-height: 20px; padding: 3px 30px 0 10px; min-width: 90px; max-width: 250px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;text-shadow: 1px 1px black;}
+#content .makeSelect select {text-shadow: none;}
 #content table .slider { width: 150px; }
 #content table.block { border: none; color: var(--color-text); }
 #content table.block tr .fbcalllist.header {border-bottom: dashed 2px var(--color-accent);}
@@ -137,7 +197,11 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content table.block.readings .changed { color: var(--color-accent); }
 #content table.block.readings .changed:after { content: ' !!!'; }
 #content table .no-background { background: none !important; }
+
+/*Test bei Notify*/
+/*#content table.block td:nth-child(1) { white-space: nowrap; width: 25%; }*/
 #content table.block td:nth-child(1) { white-space: nowrap; width: 25%; }
+#content .block.wide td:nth-child(1){width: 15%}
 #content table.block tr.odd { background: var(--color-odd); border-bottom: solid 1px var(--color-accent); }
 #content table.block tr.even { background: var(--color-even); border-bottom: solid 1px var(--color-accent); }
 #content table.block tr:last-child {border-bottom:none;}
