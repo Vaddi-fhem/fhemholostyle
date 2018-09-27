@@ -18,6 +18,7 @@ update all holo-style
 ```
 attr WEB JavaScripts codemirror/fhem_codemirror.js holo-style/custom.js
 attr WEB roomIcons Save.config:message_attention
+attr WEB codemirrorParam { "lineWrapping":true }
 ```
 
 Speichern, Seite neu laden (F5), fertig
