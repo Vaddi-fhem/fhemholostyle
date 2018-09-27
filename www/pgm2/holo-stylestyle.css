@@ -238,6 +238,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; back
 #content #ZWHelp.makeTable.help:empty { display: none; }
 #content div.img { width: 100%; background: #fff; padding: 5px; box-sizing: border-box; text-align: center; margin-top: 10px; margin-bottom: 10px; }
 #content .CodeMirror { width: 100% !important; height: 100nh;}
+#content .CodeMirror.cm-s-blackboard {height: auto;}
 #content #edit input[type="submit"].psc { border: 1px var(--color-accent) solid; border-radius: 0; color: var(--color-accent); font-size: 16px; margin: 10px; background: var(--color-dark); min-width: 200px; }
 
 #console { bottom: 0; overflow: auto; white-space: nowrap; position: absolute; top: 2em; width: 100%; }
