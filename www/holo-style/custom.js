@@ -7,7 +7,7 @@ function getClock() {
     var d = new Date();
     nhour = d.getHours();
     nmin = d.getMinutes();
-	nmonth = d.getMonth();
+	nmonth = d.getMonth()+1;
 	nday = d.getDate();
     
 	var weekday = new Array(7);
