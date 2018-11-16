@@ -11,6 +11,6 @@ UPD  2018-07-09_21:57:01 6263 www/images/holo-style/router.svg
 UPD  2018-07-09_21:57:01 2342 www/images/holo-style/smartphone.svg
 UPD  2018-07-09_21:57:01 2287 www/images/holo-style/tv.svg
 UPD  2018-07-09_21:57:01 6636 www/images/holo-style/weather.svg
-UPD  2018-07-09_21:57:01 5056 www/pgm2/holo-stylefloorplanstyle.css
+UPD  2018-17-11_00:22:25 6254 www/pgm2/holo-stylefloorplanstyle.css
 UPD  2018-27-09_18:40:39 33352 www/pgm2/holo-stylestyle.css
 UPD  2018-10-09_20:38:02 5260 www/pgm2/holo-stylesvg_style.css
