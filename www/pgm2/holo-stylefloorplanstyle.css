@@ -2,6 +2,19 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
+:root {
+	--color-accent: #00aadc;
+	--color-even: #30363c;
+	--color-odd: #191c1e;
+	--color-accent-transparent: #00aadc70;
+	--color-dark-transparent: #191c1ef0;
+	--color-light-transparent: #30363cf0;
+	--color-dark: #191c1e;
+	--color-light: #30363c;
+	--color-text: #d3d3d6;
+}
+
+
 html { line-height: 1; }
 
 ol, ul { list-style: none; }
@@ -17,16 +30,31 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
-#logo { background: url(../hausautomatisierung-com/images/haus_automatisierung.png) no-repeat; height: 120px; margin-left: 40px; margin-top: 10px; position: fixed; width: 220px; top: 0; left: 0; }
-#logo:after { color: #e56524; content: "2.7"; opacity: 0.7; }
+#logo { background: transparent; height: 120px; margin-left: 20px; margin-top: 10px; position: fixed; width: 260px; }
+#logo .theme-version { opacity: 0.7; }
+#logo #clock {   font-family: 'Impact';
+  
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: var(--color-accent);
+  text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 0 0 10px #00aadc;
+	  letter-spacing: 0.15em;
+  font-size: 50px;
+  padding: 5px 0;
+  opacity: 0.7;
+  width: 260px;}
 
-body { background: #354d69 url(../hausautomatisierung-com/images/bg_wrapper.jpg) no-repeat center 0 fixed; color: #fff; font-family: 'Open Sans', sans-serif; font-size: 14px; margin: 0 auto; padding: 0; tab-size: 4; }
+body { background: url(../holo-style/images/bg_wrapper.jpg) no-repeat center 0 fixed; color: #fff; font-family: 'Open Sans', sans-serif; font-size: 14px; margin: 0 auto; padding: 0; tab-size: 4; }
 
 body[id~=Media] { background-color: #A5A5A5; font-family: Arial, sans-serif; font-size: 9px; background-image: url(../icons/Media.bak); background-repeat: no-repeat; }
 
 #menu { margin-left: 20px; margin-top: 140px; width: 260px; z-index: 9999; height: 100%; }
 #menu table { border-collapse: collapse; border-radius: 0; width: 100%; }
-#menu a { background: #fff; color: #676f7a; display: block; padding: 10px 15px; position: relative; z-index: 9999; line-height: 15px; }
+#menu a { background: var(--color-dark); color: var(--color-accent); display: block; padding: 10px 15px; position: relative; line-height: 15px;}
 
 #backimg { position: absolute; top: 15px; left: 320px; }
 
@@ -40,7 +68,7 @@ body[id~=Media] { background-color: #A5A5A5; font-family: Arial, sans-serif; fon
 
 #errmsg { background-color: #000000; color: #FFFFFF; position: absolute; top: 0px; left: 40px; z-index: 10; }
 
-a { color: #e56524; text-decoration: none; }
+a { color: var(--color-accent); text-decoration: none; }
 
 img { border-style: none; }
 
@@ -112,3 +140,10 @@ g.on { fill: red; }
 .rc_button img { border-style: solid; border-width: 1px; border-color: transparent; }
 
 .rc_button img:active { border-color: gray; }
+
+/*HOLO Changes*/
+svg.on #flatten,svg.FS20_on { fill: var(--color-accent) !important; }
+input[type="text"] { border: 1px var(--color-accent) solid; color: var(--color-accent); background: #101010; font-size: 16px; height: 20px; vertical-align: baseline;}
+input[type="text"]:focus {box-shadow: 0 0 10px var(--color-accent); transition: .5s all ease-in-out;}
+input.saveName[type="text"] { border: 1px var(--color-accent) solid; background: var(--color-dark); color:var(--color-accent); }
+input[type="submit"] { border: inset 1px var(--color-dark); background: #00aadc; color:var(--color-dark); }
